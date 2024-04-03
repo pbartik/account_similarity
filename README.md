@@ -17,6 +17,12 @@ The input is a json payload containing the following:
 
 The output is a list containing lists of the format [account_id1, account_id2] indicating which accounts have similar screen names
 
+## To run unit tests
+From the `app` directory, run:
+```commandline
+pytest tests
+```
+
 ## Deploying locally
 
 Install the dependencies in [requirements.txt](./requirements.txt) 

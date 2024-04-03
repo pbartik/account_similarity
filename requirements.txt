@@ -1,5 +1,6 @@
 fastapi>=0.68.0,<0.69.0
 polars==0.20.18
 pydantic>=1.8.0,<2.0.0
+pytest==8.1.1
 rapidfuzz==3.7.0
 uvicorn>=0.15.0,<0.16.0
