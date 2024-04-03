@@ -51,10 +51,12 @@ def get_hashtag_accounts(posts: List[Dict], hashtag: str) -> List[str]:
         if post["is_repost"]:
             continue
 
+        hashtags = post.get("hashtags") or []
+
         # assuming we want a case-insensitive search
         # if we want a case-sensitive search, the condition is just `if hashtag in post['hashtags']`
         if (
-            hashtag.lower() in [h.lower() for h in post["hashtags"]]
+            hashtag.lower() in [h.lower() for h in hashtags]
             and post["author_id"] not in result
         ):
             result.append(post["author_id"])
