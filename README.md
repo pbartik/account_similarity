@@ -54,7 +54,7 @@ docker logs account_similarity`
 
 For any debugging, it may be easier to run the service without the `-d` flag (detached mode):
 ```commandline
-docker-compose up -d --build
+docker-compose up --build
 ```
 
 To stop the service and remove the container, run:
