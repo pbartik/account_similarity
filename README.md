@@ -17,7 +17,21 @@ The input is a json payload containing the following:
 
 The output is a list containing lists of the format [account_id1, account_id2] indicating which accounts have similar screen names
 
-## Deployment
+## Deploying locally
+
+Install the dependencies in [requirements.txt](./requirements.txt) 
+```commandline
+pip install -r requirements.txt
+```
+
+Navigate inside the `account_similarity` directory and run:
+```commandline
+uvicorn main:app --reload
+```
+
+Open http://localhost:8000 in your web browser. You should see the following message: "Your account similarity service is live!"
+
+## Deploying with Docker
 
 To deploy the service, navigate inside the `account_similarity` directory and run:
 
